@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 body{
     height: 100vh;
 }
@@ -10,8 +11,10 @@ body{
     gap: 1rem;
     position: fixed;
     width: 89rem;
+    top: 0.313rem;
 }
 .left{
+    margin-left: 1rem;
     margin-top: 0.5rem;
     display: flex;
     gap: 1rem;
@@ -72,5 +75,44 @@ body{
 }
 /* header-section-end*/
 /* sidebar */
+.sidebar {
+    height: 100vh;
+    width: 15rem;
+    background-color: rgb(255, 255, 255);
+    margin-top: 3.5rem;
+    margin-left: -1rem;
+}
+
+.item-1 {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    
+}
+.imgs {
+    line-height: 2rem;
+    opacity: 0.7;
+    padding: 0.5rem 1rem;
+}
+.img-1 {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem; /* spacing between image and text */
+    margin-bottom: 1rem; /* spacing between rows */
+}
+
+.svg1,
+.png1 {
+    width: 1.5rem;
+    height: auto;
+}
 
 /* sidebar-end*/
