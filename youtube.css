@@ -75,6 +75,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 0.4rem;
 }
 /* header-section-end*/
 /* sidebar */
@@ -185,3 +186,10 @@ a{
     line-height: 1rem;
 }
 /* sidebar-end*/
+/* main */
+.main-content{
+    flex: 1;
+    padding: 0 1.5rem 0 1.5rem;
+    padding-top: 3.4rem;
+}
+/* main-end*/
