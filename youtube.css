@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-body{
+.main{
+    display: flex;
     height: 100vh;
+    gap:0.3rem;
 }
 /* header-section */
 .header{
-    background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -13,6 +14,7 @@ body{
     position: fixed;
     width: 89rem;
     top: 0.313rem;
+    z-index: 2;
 }
 .left{
     margin-left: 1rem;
@@ -78,13 +80,22 @@ body{
 /* sidebar */
 .sidebar {
     height: 100vh;
-    width: 15rem;
+    width: 17rem;
     background-color: rgb(255, 255, 255);
-    margin-top: 3.5rem;
     margin-left: -2rem;
+    overflow: auto;
 }
 .container{
-    padding: 2rem;
+    padding-right: 2rem;
+    padding-left:2rem ;
+}
+.white-bar{
+    background-color: rgb(255, 255, 255);
+    width: 12rem;
+    height: 4rem;
+    position: fixed;
+    top: 0rem;
+    z-index:1;
 }
 .item-1 {
     background-color: #ffffff;
@@ -93,6 +104,15 @@ body{
     flex-direction: column;
     justify-content: center;
     padding: 0.5rem 0.75rem;
+}
+.item-0 {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    margin-top: 3rem;
 }
 .item-2 {
     background-color: #ffffff;
@@ -130,7 +150,6 @@ a{
     display: flex;
     align-items: center;
     gap: 1.7rem; /* spacing between image and text */
-    margin-bottom: 1rem; /* spacing between rows */
     padding: 0.2rem;
 }
 .img-2 {
@@ -161,5 +180,8 @@ a{
 .title{
     font-size: larger;
     font-weight: bold;
+}
+.text-policy{
+    line-height: 1rem;
 }
 /* sidebar-end*/
